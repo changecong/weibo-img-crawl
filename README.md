@@ -22,3 +22,11 @@ Download wookmark Jquery plug in.
 
 > Bootstrap
 Download Bootstrap, put related files into /static/
+
+## How to
+1. Run ./crawl
+2. Visti http://0.0.0.0:8080 with your browser.
+3. Connect weibo with your weibo account
+4. Use user's uid to get their pictures.
+
+
