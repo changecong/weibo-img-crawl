@@ -1,0 +1,7 @@
+#list {position:relative;margin:0;list-style-type:none;}
+
+#list li{display:none;margin:2px;border:1px solid #dedede;border-radius:2px;background-color:#fff;cursor:pointer;}
+#list li img{display:block;}
+
+
+body{background-color:#e9e9e9;}

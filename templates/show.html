@@ -1,0 +1,19 @@
+$def with(content, id)
+
+	<form action="/$id" class="form-inline" method="post" name="sendForm" style="float:right;">
+		<div class="input-prepend">
+ 			<span class="add-on">uid</span>
+			<input type="text" class="span2" id="prependedInput" name="uid" placeholder="1234567890">
+		</div>
+		<input type="submit" value='提交'>
+	</form>
+</div>
+
+<div id="images">
+	<ul id='list'>
+	$for i in content:
+		<li><a href="$i" class="thumbnail" target="_blank"><img width="200" src="$i"></a><p><a src<a href="$i" target="_blank">download</a></p></li>
+	</ul>
+</div>
+
+</div>

@@ -1,0 +1,59 @@
+$def with (page)
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Zhicong Chen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" ">
+	<meta name="author" content="Zhicong Chen">
+
+	<link href="/static/css/bootstrap.css" rel="stylesheet">
+	<link href="/static/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="/static/style.css" rel="stylesheet">
+
+	<link rel="shortcut icon" href="/static/ico/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+
+</head>
+
+<body>
+<div class="container">
+	<div id="header" class="page-header">
+		<h1>微博图片查看器</h1>
+		<a href="/" target="_blank">首页</a>&nbsp;&nbsp;
+		<a href="/">关于</a>&nbsp;&nbsp;
+		<a href="/">作者</a>
+
+	$:page
+
+<!-- javascript -->
+
+<script src='/static/wookmark/jquery.js'></script>
+<script src="/static/wookmark/jquery.wookmark.js"></script>
+
+<script>
+function onScroll(event) {
+	// Check if we're within 100 pixels of the bottom edge of the broser window.
+	var closeToBottom = ($$(window).scrollTop() + $$(window).height() > $$(document).height() - 100);
+	if(closeToBottom) {
+		var action_str = $$("#myform").attr("action")
+		$$.post(action_str, {uid:'1'});
+	}
+};
+
+
+$$(document).ready(new function() {
+
+	$$(window).bind('scroll', onScroll);
+
+	$$("#list li").wookmark({ 
+    	container:$$("#list"), 
+    	offset:10, 
+    	itemWidth:220
+	});
+});
+</script>
+</body>
+</html>
