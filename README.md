@@ -1,9 +1,13 @@
 weibo-img-crawl
 ===============
 
-use python to connect weibo.cn, no sdk required
+Fake cookies to access weibo.cn using python, no sdk required.
 
 ## Introduction
+
+> The code is not completed yet. It is not very efficient now.
+
+> weibo.cn is always changed, so the code may lose functionality after couples of months. But the weibohack.py shows the base idea of how a bot sign into a website.
 
 > The core code is in weibohack.py, file crawl.py is a web back-end program running with [webpy](http://webpy.org/). Before running the code some configuration needs to be make.
 
