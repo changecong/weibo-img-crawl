@@ -24,11 +24,11 @@ Fake cookies to access weibo.cn using python, no sdk required.
 
 > Wookmark
 
->> Download wookmark Jquery plug in.
+>> Included in /static/wookmark/ . You may also Download wookmark Jquery plug in from [here](www.wookmark.com/jquery-plugin)
 
 > Bootstrap
 
->> Download Bootstrap, put related files into /static/
+>> Download [Bootstrap](http://twitter.github.com/bootstrap/), put related files into /static/
 
 ## How to
 1. Run ./crawl
